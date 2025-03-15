@@ -16,6 +16,8 @@
 .nav-logo {
   height: 50px;
   width: 100px;
+  padding: auto;
+  cursor: pointer;
 }
 .logo-container {
   height: 50px;
@@ -31,20 +33,26 @@
 
 .border {
   border: 1.5px solid transparent;
+  border-radius: 4px;
 }
 .border:hover {
   border: 1.5px solid white;
 }
 /** box2**/
+.nav-address {
+  padding: 10px;
+  cursor: pointer;
+}
 .add-first {
   color: #cccccc;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin-left: 15px;
 }
 
 .add-second {
   font-size: 1rem;
   margin-left: 3px;
+  font-weight: 700;
 }
 .add-icon {
   display: flex;
@@ -55,10 +63,9 @@
 .nav-search {
   display: flex;
   justify-content: space-evenly;
-  background-color: pink;
-  width: 620px;
+  width: 680px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 2px solid transparent;
 }
 
@@ -73,8 +80,17 @@
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
+  border-right: 1px solid gray;
+  color: gray;
+  font-size: 0.85rem;
+  padding: 0px 6px;
+  outline: none;
+  cursor: pointer;
 }
-
+.search-select:hover {
+  background-color: #e0dcdc;
+  color: black;
+}
 .search-input {
   width: 100%;
   font-size: 1rem;
@@ -84,18 +100,46 @@
 }
 
 .search-icon {
-  width: 45px;
+  width: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   background-color: #febd68;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  color: #0f1111;
+  color: #2d3030;
+  cursor: pointer;
+}
+.search-icon:hover {
+  background-color: #f8aa43;
 }
 
 /** box4 **/
+.nav-language {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px 10px 10px 10px;
+  cursor: pointer;
+}
+.nav-language img {
+  width: 22px;
+  height: 22px;
+}
+.nav-language select {
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  border: none;
+  font-size: 0.85rem;
+}
+
+/** box5 **/
+.nav-signin {
+  padding: 10px;
+  cursor: pointer;
+}
 span {
   font-size: 0.7rem;
 }
@@ -104,7 +148,13 @@ span {
   font-weight: 700;
 }
 
-/**box6 **/
+/** box6 **/
+.nav-return {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/**box7 **/
 .nav-cart i {
   font-size: 30px;
 }
@@ -112,6 +162,8 @@ span {
 .nav-cart {
   font-size: 0.85rem;
   font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
 }
 
 /** panel **/
@@ -121,21 +173,40 @@ span {
   display: flex;
   color: white;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 .panel-options p {
   display: inline;
-  margin-left: 15px;
+  padding: 10px;
+  cursor: pointer;
 }
 .panel-options {
-  width: 70%;
+  width: 100%;
   font-size: 0.85rem;
+  display: flex;
+  justify-content: flex-start;
 }
 .panel-deals {
   font-size: 0.9rem;
   font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
 }
-
+.panel-all i {
+  padding-right: 6px;
+  font-size: 20px;
+}
+.panel-all {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.panel-left {
+  display: flex;
+  align-items: center;
+}
 /** hero section **/
 .hero-section {
   background-image: url("hero_image.jpg");
@@ -160,6 +231,7 @@ span {
 
 .hero-message a {
   color: #007185;
+  cursor: pointer;
 }
 
 /** shop section **/
@@ -183,6 +255,7 @@ span {
   background-size: cover;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .box-content {
   margin-left: 1rem;
@@ -191,6 +264,11 @@ span {
 
 .box-content p {
   color: #007185;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.box-content p:hover {
+  color: #06acc9;
 }
 /** footer **/
 .footer {
@@ -204,12 +282,16 @@ span {
   justify-content: center;
   align-items: center;
   font-size: 0.85rem;
+  cursor: pointer;
+}
+.foot-panel1:hover {
+  background-color: #334050;
 }
 
 .foot-panel2 {
   background-color: #222f3d;
   color: white;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -222,6 +304,11 @@ ul a {
   font-size: 0.85rem;
   margin-top: 10px;
   color: #dddddd;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+ul a:hover {
+  text-decoration: underline;
 }
 ul p {
   font-weight: 700;
@@ -238,6 +325,7 @@ ul p {
 .foot-logo {
   height: 50px;
   width: 100px;
+  cursor: pointer;
 }
 
 .foot-logo-container {
@@ -249,8 +337,8 @@ ul p {
 }
 
 .foot-panel4 {
-  background-color: #0f1111;
-  color: white;
+  background-color: #131a22;
+  color: #dddddd;
   height: 80px;
   text-align: center;
 }
@@ -260,6 +348,11 @@ ul p {
 }
 .pages a {
   margin-left: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+.pages a:hover {
+  border-bottom: 1px solid #dddddd;
 }
 
 .copyright {
